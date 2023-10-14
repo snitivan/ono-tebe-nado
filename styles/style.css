@@ -5,7 +5,7 @@
   grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
   padding-top: 92px;
-  padding-bottom: 102px;
+  padding-bottom: 92px;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -21,7 +21,7 @@
 .header__link {
   color: #000;
   font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -29,12 +29,11 @@
 
 .header__links-list {
   display: flex;
-  gap: 15px;
   list-style-type: circle;
 }
 
 .header__links-list-item {
-  margin-right: 13px;
+  margin-right: 33px;
 }
 
 .header__links-list:last-child {
@@ -62,6 +61,7 @@
   grid-column-start: 5;
   grid-column-end: 6;
   justify-self: end;
+  align-self: center;
 }
 
 .address {
@@ -82,6 +82,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 165px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .overlay {
@@ -95,13 +98,10 @@
 
 .cover__title {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   row-gap: 17px;
   width: 100%;
   z-index: 1;
-  padding-top: 180px;
-  padding-left: 27px;
-  padding-right: 50px;
   color: #FFF;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 100px;
@@ -149,9 +149,8 @@
 .cover__description {
   display: flex;
   width: 100%;
-  padding-right: 50px;
-  padding-left: 50px;
-  margin-bottom: 62px;
+  padding-top: 123px;
+  margin-bottom: 50px;
   z-index: 2;
 }
 
@@ -161,7 +160,6 @@
   width: 100%;
   justify-content: end;
   align-self: center;
-  text-align: center;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -170,8 +168,8 @@
   text-transform: uppercase;
   grid-column-start: 2;
   grid-column-end: 5;
-  word-spacing: 23px;
-  padding-right: 78px;
+  word-spacing: 21px;
+  padding-right: 88px;
 }
 
 .bet-button {
@@ -204,14 +202,14 @@
 .lots {
   display: flex;
   flex-direction: column;
-  margin-top: 180px;
+  margin-top: 185px;
   padding-right: 50px;
   padding-left: 50px;
   list-style: none;
 }
 
 .lots__heading {
-  padding-left: 50px;
+  padding-left: 45px;
   padding-bottom: 27px;
   color: #000;
   font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -223,15 +221,14 @@
 }
 
 .lots__card-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 25px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
   list-style-type: none;
   flex-wrap: wrap;
 }
 
 .lots__card-list-item {
-  display: flex;
   position: relative;
   min-height: 450px;
   width: 430px;
@@ -271,7 +268,7 @@
   display: grid;
   align-items: end;
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
   color: #FFF;
@@ -281,32 +278,28 @@
   font-weight: 400;
   line-height: 120%; /* 24px */
   z-index: 2;
-  
+}
+
+.card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-
+  background-position: center;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
+  background-position: center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
+  background-position: center;
 }
 
 .lots__look-more-link {
@@ -322,7 +315,7 @@
 }
 
 .about {
-  margin-top: 180px;
+  margin-top: 185px;
   padding-right: 50px;
   padding-left: 50px;
 }
@@ -364,6 +357,7 @@
   text-transform: uppercase;
   padding-top: 100px;
   padding-bottom: 75px;
+  align-self: center;
 }
 
 .title__text {
@@ -374,12 +368,13 @@
   font-weight: 400;
   line-height: normal;
   padding-top: 25px;
+  align-self: self-start;
 }
 
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-top: 180px;
+  padding-top: 190px;
   padding-right: 50px;
   padding-left: 50px;
   padding-bottom: 90px;
@@ -402,8 +397,8 @@
 
 .footer__social-list {
   display: flex;
-  width: 240px;
-  justify-content: space-between;
+  justify-content: end;
+  gap: 50px;
 }
 
 .footer__menu-list-item {
