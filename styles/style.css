@@ -1,11 +1,5 @@
 /* место для вашего кода */
 
-body {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -25,13 +19,19 @@ body {
   grid-column-end: 3;
 }
 
-.header_link {
+.header__link {
   color: #000;
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 20px;
+  list-style-type: circle;
 }
 
 .header__links-list-item {
@@ -68,6 +68,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 24.3px; /* 135% */
+  max-width: 240px;
 }
 
 .cover {
